@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text" ,>
+                        <strong>Gửi người yêu của anh,</strong>
+                        <p>
+                            Anh chúc em có một ngày sinh nhật sắp tới thật vui vẻ, và quan trọng hơn hết là lúc nào cũng
+                            xinh đẹp và may mắn trong tuổi mới nhá. Nhưng mà dù có lớn đến đâu, khi nào khó khăn hoặc
+                            buồn, hãy nhớ rằng em có anh nha. Em luôn là em bé của anh!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+
+</html>
